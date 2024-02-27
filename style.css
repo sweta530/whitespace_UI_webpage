@@ -2,16 +2,6 @@
     box-sizing: border-box;
     font-family: Inter;
 }
-.blue-btn  {
-    background-color: #1A75FF !important;
-    color: #FFFFFF !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    font-family: Inter !important;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-}
 .heading {
     font-size: 48px;
     font-weight: 600;
@@ -24,7 +14,7 @@
 .bold-description {
     font-size: 18px;
     font-weight: 500;
-    color: #141c24;
+    color: #344051;
 }
 .title {
     font-size: 36px;
@@ -47,6 +37,22 @@
     color: #0052cc;
 }
 
+.action-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+}  
+.blue-btn  {
+    background-color: #1A75FF !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    font-family: Inter !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+} 
 .watch-demo-btn {
     width: 153px;
     height: 40px;
@@ -64,6 +70,11 @@
 
 
 @media screen and (max-width: 480px) {
+    .action-btn {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
     .watch-demo-btn {
         width: auto;
     }
