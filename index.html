@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitespace UI</title>
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" class="logo-img">
+            <div>Whitespace UI</div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </nav>
+            <div class="hamburger-icon">
+                <a href="#" class="blue-btn">Start now</a>            
+                <input type="checkbox" id="checkbox_toggle" onchange="hamburgerMenu()"/>
+                <label for="checkbox_toggle" class="hamburger">
+                    <img src="assets/Icon Button.svg" alt="Hamburger" >
+                </label>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="content">
+            <div class="content-text">
+                <div class="heading">
+                    Everything you need to scale a global team
+                </div>
+                <div class="description">
+                    Check out our proven methods, guides, and exercises that help make work better, and people happier.
+                </div>
+            </div>
+            <div class="content-btn">
+                <div class="action-btn">
+                    <a href="#" class="blue-btn">Learn More</a>
+                    <a href="#" class="watch-demo-btn"><img src="assets/Play.svg" alt="Play" >Watch Demo</a>
+                </div>
+                <div>
+                    <span class="description">
+                        Trusted by over than 1M customers
+                    </span>
+                    <div>
+                        <span onclick="rating(1)" class="star">★</span>
+                        <span onclick="rating(2)" class="star">★</span>
+                        <span onclick="rating(3)" class="star">★</span>
+                        <span onclick="rating(4)" class="star">★</span>
+                        <span onclick="rating(5)" class="star">★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/girl.svg" alt="Girl Image" class="image-girl">
+            <img src="assets/Credit Card.svg" alt="Credit Card Image" class="image-credit-card">
+        </div>
+    </section>
+    
+</body>
+</html>
