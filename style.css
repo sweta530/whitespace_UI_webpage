@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Inter;
 }
 header {
     display: flex;
@@ -41,7 +42,6 @@ header {
     color: #344051;
     font-size: 16px;
     font-weight: 500;
-    font-family: Inter;
 }
 .blue-btn  {
     background-color: #1A75FF !important;
@@ -65,15 +65,38 @@ header {
     margin: auto;
 }
 .heading {
-    font-family: Inter;
     font-size: 48px;
     font-weight: 600;
     color: #141c24;
 }
 .description {
-    font-family: Inter;
     font-size: 18px;
     color: #344051;
+}
+.bold-description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #141c24;
+}
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #141c24;
+}
+.sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #002966;
+}
+.paragraph {
+    font-size: 16px;
+    color: #002966;
+}
+.tag{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f0f6ff;
+    color: #0052cc;
 }
 .content {
     display: flex;
@@ -138,6 +161,58 @@ input[type=checkbox] {
     user-select: none;
 }
 
+.feature-section{
+    display: flex;    
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.feature-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.feature-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.feature-description .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+.left-section .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+.feature-description .right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.right-section .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+}
+
 @media screen and (min-width: 769px) {
     #menu {
         display: flex !important;
@@ -147,6 +222,13 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 768px) {
+    .feature-description {
+        flex-direction: column;
+    }
+    .right-section .column img {
+        max-width: 100%;
+        height: auto;
+    }
     header {
         justify-content: space-between;
         padding: 10px;
