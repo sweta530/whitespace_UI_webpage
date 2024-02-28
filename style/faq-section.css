@@ -1,0 +1,41 @@
+.faq-section {
+    display: flex;    
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.faq-container {
+    width: 100%;
+    padding: 32px;
+    border-radius: 8px;
+    border: solid 1px #ced2da;
+}
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+div[class^="panel"] {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .faq-section {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .faq-container {
+        padding: 16px;
+    }
+}

@@ -30,6 +30,10 @@
     font-size: 16px;
     color: #002966;
 }
+.small-text {
+    font-size: 16px;
+    color: #344051;
+}
 .tag{
     font-size: 14px;
     font-weight: 500;

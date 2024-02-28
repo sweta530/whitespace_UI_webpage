@@ -24,3 +24,17 @@ function hamburgerMenu() {
     }
 }
 
+function togglePanel(i) {
+    let panel = document.querySelector('.panel-' + i);
+    let img = document.querySelector('.plus-btn-' +i);
+    let panelStyle = window.getComputedStyle(panel);
+
+    if (panelStyle.display === "none") {
+        panel.style.display = 'block';
+        img.src = "assets/Remove Circle.svg";
+    } else {
+        panel.style.display = 'none';
+        img.src = "assets/Add Circle.svg";
+    }
+}
+
