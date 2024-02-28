@@ -39,6 +39,9 @@
     color: #344051;
 }
 .tag{
+    gap: 10px;
+    padding: 2px 10px;
+    border-radius: 150px;
     font-size: 14px;
     font-weight: 500;
     background-color: #f0f6ff;
