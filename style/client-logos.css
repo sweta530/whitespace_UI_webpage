@@ -8,14 +8,14 @@
     align-items: center;
     margin-top: 46px;
 }
-.row {
+.client-logos-row {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
 }
-.column {
+.client-logos-column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -35,24 +35,24 @@
 }
 
 @media screen and (max-width: 768px) {
-     .row {
+     .client-logos-row {
         flex-direction: column;
         gap: 0;
     }
-    .column {
+    .client-logos-column {
         flex-direction: row;
         justify-content: space-around;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .row {
+    .client-logos-row {
        flex-direction: column;
        gap: 0;
        justify-content: center;
        align-items: center;
    }
-   .column {
+   .client-logos-column {
        flex-direction: column;
        justify-content: center;
    }

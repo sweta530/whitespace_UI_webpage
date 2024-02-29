@@ -99,6 +99,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .blog-section {
+        width: 90%;
+    }
     .blog-content {
         flex-direction: column
     }

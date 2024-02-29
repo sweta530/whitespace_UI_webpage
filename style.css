@@ -78,7 +78,14 @@
     border: solid 1px #ced2da;
     text-decoration: none;
 }
-
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#e4e7ec;
+    height: 1px;
+  }
 
 @media screen and (max-width: 480px) {
     .action-btn {

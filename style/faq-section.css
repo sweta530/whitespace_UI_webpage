@@ -45,7 +45,7 @@ div[class^="panel"] {
 
 @media screen and (max-width: 768px) { 
     .faq-section {
-        width: 80%;
+        width: 90%;
     }
 }
 
