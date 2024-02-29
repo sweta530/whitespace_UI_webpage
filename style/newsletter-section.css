@@ -1,0 +1,88 @@
+.newsletter-section {
+    height: 342px; 
+    position: relative; 
+    width: 80%;
+    margin: auto;
+}
+.newsletter-base {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #f0f6ff;
+    border-radius: 32px;
+}
+.newsletter-img {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 50%; 
+    height: 100%;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    object-fit: cover;
+}
+.newsletter-content {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 60%; 
+    height: 100%; 
+    padding: 32px;  
+    overflow: hidden;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.user-mail {
+    display: flex;
+    margin-top: 50px;
+    gap: 8px;
+    width: 100%;
+}
+.user-mail input {
+    width: 60%;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 8px 10px 12px;
+    background-color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .user-mail {
+        margin-top: 24px;
+    }
+    .newsletter-img {
+        width: 60%;
+    }
+    .newsletter-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .newsletter-section {
+        width: 100%;
+    }
+    .newsletter-img {
+        width: 80%;
+    }
+    .user-mail {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .user-mail input {
+        width: 100%;
+    }
+    .user-mail .blue-btn {
+        width: 100%;
+    }
+    .newsletter-content {
+        width: 100%;
+    }
+    .newsletter-content .title {
+        font-size: 28px;
+    }
+}
